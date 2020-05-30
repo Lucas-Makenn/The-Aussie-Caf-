@@ -1,0 +1,229 @@
+$light-orange: #eb7826;
+$brown: #170a04;
+$big-font: 2.4rem;
+$medium-font: 1.8rem;
+$small-font: 1.2rem;
+$title-font: "Julius Sans One", sans-serif;
+$text-font: "Montserrat", sans-serif;
+
+@import "global";
+@import "navigation";
+@import "home";
+@import "products";
+@import "about";
+@import "contact";
+@import "footer";
+
+/*@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .main-header {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-right: 5rem;
+    }
+    nav {
+      justify-content: space-around;
+      align-items: center;
+      flex: 1 1 40rem;
+      margin: 0;
+    }
+    ul {
+      margin: 0;
+    }
+  }
+  .product-text {
+    p {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .about-text {
+    p {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  .footer-text {
+    p {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+  }
+}*/
+
+/* Extra small */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .main-header {
+    nav {
+      position: fixed;
+      border-top: 1px solid $brown;
+      height: 10rem;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      background: rgba(235, 120, 38, 0.9);
+      padding: 2rem 0 2rem 0;
+      ul {
+        font-size: 1.4rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        width: 80%;
+        margin: auto;
+        color: $brown;
+        padding-top: 2rem;
+        justify-content: space-between;
+      }
+    }
+  }
+  footer {
+    padding-bottom: 10rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 3rem auto 3rem auto;
+    justify-content: space-between;
+    align-content: center;
+    img {
+      display: inline-block;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      align-content: center;
+
+      ul {
+        align-self: center;
+        margin: 0;
+        li {
+          padding-left: 5rem;
+        }
+      }
+    }
+  }
+  .home {
+    header {
+      position: absolute;
+      background-color: rgba(235, 120, 38, 0);
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fbfbfb;
+      h1 {
+        width: 80%;
+        margin: auto;
+        font-size: 7rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .hero-image {
+    height: 70vh;
+    background: linear-gradient(rgba(235, 120, 38, 0.3)),
+      url("../img/janko-ferlic-h9Iq22JJlGk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .product-images {
+    #sack1 {
+      height: 20rem;
+    }
+    #sack2 {
+      height: 21rem;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+
+.main-header{
+  nav {
+    ul {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+  .home {
+    header {
+      h1 {
+        font-size: 6rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .product-text {
+    p {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .about-text {
+    p {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  .footer-text {
+    p {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+  }
+}

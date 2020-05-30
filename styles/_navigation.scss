@@ -1,0 +1,32 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  position: relative;
+
+  img {
+    height: 10rem;
+    margin: 5rem auto 5rem auto;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-0.5rem);
+      transition: 0.2s ease-in-out infinite;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      color: $light-orange;
+      font-size: $medium-font;
+      font-family: $title-font;
+      margin-bottom: 5rem;
+      li {
+        &:hover {
+          color: $brown;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  header {
+    text-align: center;
+    margin-bottom: 5rem;
+    h2 {
+      font-size: $big-font;
+      color: $light-orange;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-size: $medium-font;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+  #sack1 {
+    width: auto;
+    height: 12rem;
+  }
+  #sack2 {
+    width: auto;
+    height: 13rem;
+  }
+}
+
+.product-text {
+  color: $brown;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  h2 {
+    font-family: $title-font;
+    margin-bottom: 3rem;
+    font-size: $medium-font;
+  }
+  p {
+    font-size: $small-font;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+}
+
+button {
+  align-self: center;
+  border: none;
+  width: 12rem;
+  font-size: $small-font;
+  font-family: $text-font;
+  background: $light-orange;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #cb6013;
+    transition: 0.2s ease-out;
+  }
+}

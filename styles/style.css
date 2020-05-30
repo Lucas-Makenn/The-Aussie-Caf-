@@ -1,0 +1,553 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #170a04;
+  background: #fbfbfb;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.main-header img {
+  height: 10rem;
+  margin: 5rem auto 5rem auto;
+  cursor: pointer;
+}
+
+.main-header img:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-transition: 0.2s ease-in-out infinite;
+  transition: 0.2s ease-in-out infinite;
+}
+
+.main-header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #eb7826;
+  font-size: 1.8rem;
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 5rem;
+}
+
+.main-header nav ul li:hover {
+  color: #170a04;
+}
+
+.home {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.home header {
+  background-color: #eb7826;
+  color: #170a04;
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.home header h1 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.home header p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-image {
+  height: 70vh;
+  background: url("../img/janko-ferlic-h9Iq22JJlGk-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.products header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.products header h2 {
+  font-size: 2.4rem;
+  color: #eb7826;
+  margin-bottom: 2rem;
+}
+
+.products header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.product-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.product-images #sack1 {
+  width: auto;
+  height: 12rem;
+}
+
+.product-images #sack2 {
+  width: auto;
+  height: 13rem;
+}
+
+.product-text {
+  color: #170a04;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.product-text h2 {
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
+.product-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  width: 12rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  background: #eb7826;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cb6013;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.about {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 120, 38, 0.8)), to(rgba(235, 120, 38, 0.8))), url("../img/clifford-VobvKmG-StA-unsplash2.jpg");
+  background: linear-gradient(rgba(235, 120, 38, 0.8), rgba(235, 120, 38, 0.8)), url("../img/clifford-VobvKmG-StA-unsplash2.jpg");
+  background-position: center;
+  height: 55rem;
+  background-size: cover;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #170a04;
+}
+
+.about header {
+  padding-top: 5rem;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.about h3 {
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+.about-text {
+  width: 80%;
+  margin: auto;
+}
+
+.notes {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #170a04;
+  padding: 5rem 0 5rem 0;
+  color: #eb7826;
+  font-size: 1.8rem;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact h2 {
+  margin: 5rem 0 2rem 0;
+  font-size: 2.4rem;
+  color: #eb7826;
+}
+
+.contact h3 {
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto 5rem auto;
+  padding: 5rem 0;
+}
+
+.contact form div {
+  margin-bottom: 2rem;
+}
+
+.contact form input {
+  border: 1px solid #eb7826;
+  font-size: 1.2rem;
+}
+
+.contact form input:focus {
+  border: 1.5px solid #eb7826;
+}
+
+.contact form label {
+  margin-right: 0.5rem;
+}
+
+.contact form button {
+  cursor: pointer;
+  margin-top: 3rem;
+  width: 12rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  background: #eb7826;
+  padding: 1.5rem 2.5rem;
+}
+
+.contact form button:hover {
+  background-color: #cb6013;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #170a04;
+  color: white;
+  text-align: center;
+}
+
+.social img {
+  margin: 5rem 1rem 2rem 1rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.footer-text {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-text p {
+  margin-bottom: 2rem;
+}
+
+.footer-text h4 {
+  margin-bottom: 5rem;
+}
+
+/*@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .main-header {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-right: 5rem;
+    }
+    nav {
+      justify-content: space-around;
+      align-items: center;
+      flex: 1 1 40rem;
+      margin: 0;
+    }
+    ul {
+      margin: 0;
+    }
+  }
+  .product-text {
+    p {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .about-text {
+    p {
+      width: 60%;
+      margin: auto;
+    }
+  }
+  .footer-text {
+    p {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
+  }
+}*/
+/* Extra small */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .main-header nav {
+    position: fixed;
+    border-top: 1px solid #170a04;
+    height: 10rem;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: rgba(235, 120, 38, 0.9);
+    padding: 2rem 0 2rem 0;
+  }
+  .main-header nav ul {
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+    color: #170a04;
+    padding-top: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer {
+    padding-bottom: 10rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+  .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    margin: 3rem auto 3rem auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main-header img {
+    display: inline-block;
+    margin: 0;
+  }
+  .main-header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main-header nav ul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+  .main-header nav ul li {
+    padding-left: 5rem;
+  }
+  .home header {
+    position: absolute;
+    background-color: rgba(235, 120, 38, 0);
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fbfbfb;
+  }
+  .home header h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 7rem;
+    font-weight: 600;
+  }
+  .hero-image {
+    height: 70vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 120, 38, 0.3))), url("../img/janko-ferlic-h9Iq22JJlGk-unsplash.jpg");
+    background: linear-gradient(rgba(235, 120, 38, 0.3)), url("../img/janko-ferlic-h9Iq22JJlGk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .product-images #sack1 {
+    height: 20rem;
+  }
+  .product-images #sack2 {
+    height: 21rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .main-header nav ul {
+    font-size: 1.4rem;
+  }
+  .home header h1 {
+    font-size: 6rem;
+    font-weight: 500;
+  }
+  .product-text p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-text p {
+    width: 60%;
+    margin: auto;
+  }
+  .footer-text p {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
